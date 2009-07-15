@@ -1,0 +1,21 @@
+# Contributor: crab <crabtw@gmail.com>
+
+_gemname=GEMNAME
+pkgname=ruby19-$_gemname
+pkgver=GEMVER
+pkgrel=1
+pkgdesc="description"
+arch=('i686' 'x86_64')
+url="website"
+license=('MIT')
+depends=('ruby19')
+makedepends=('ruby19')
+source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
+noextract=($_gemname-$pkgver.gem)
+#md5sums=('')
+
+build() {
+  cd $srcdir
+  local _gemdir="$(ruby19 -e'puts Gem.default_dir')"
+  gem19 install --ignore-dependencies -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
+}
