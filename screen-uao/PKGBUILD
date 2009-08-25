@@ -2,15 +2,16 @@
 # Maintainer: Allan McRae <allan@archlinux.org>
 # Committer: dorphell <dorphell@gmx.net>
 
-pkgname=screen
+pkgname=screen-uao
 pkgver=4.0.3
-pkgrel=8
+pkgrel=1
 _ptygroup=5 #the UID of our PTY/TTY group
 pkgdesc="Full-screen window manager that multiplexes a physical terminal"
 arch=('i686' 'x86_64')
 url="http://www.gnu.org/software/screen/"
 license=('GPL')
 depends=('ncurses' 'pam')
+conflicts=(screen)
 backup=('etc/screenrc' 'etc/pam.d/screen')
 options=('!makeflags')
 install=screen.install
@@ -30,7 +31,7 @@ md5sums=('8506fd205028a96c741e4037de6e3c42' \
 build() {
   export LDFLAGS="${LDFLAGS} -Wl,--as-needed"
 
-  cd ${srcdir}/${pkgname}-${pkgver}
+  cd ${srcdir}/screen-${pkgver}
 
   patch < ../../uao-patch/cjkwidth-mhsin.diff || return 1
   patch < ../../uao-patch/uao.diff || return 1
