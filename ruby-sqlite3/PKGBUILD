@@ -1,21 +1,21 @@
 # Contributor: crab <crabtw@gmail.com>
 
 _gemname=sqlite3-ruby
-pkgname=ruby19-sqlite3
+pkgname=ruby-sqlite3
 pkgver=1.2.5
 pkgrel=1
 pkgdesc="A Ruby interface for the SQLite3 database engine"
 arch=('i686' 'x86_64')
 url="http://rubyforge.org/projects/sqlite-ruby"
 license=('BSD')
-depends=('ruby19' 'sqlite3')
-makedepends=('ruby19' 'sqlite3')
+depends=('ruby' 'sqlite3')
+makedepends=('ruby' 'sqlite3')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
 md5sums=('eaa6328b0e971f4563f8d26715e37e13')
 
 build() {
   cd $srcdir
-  local _gemdir="$(ruby19 -e'puts Gem.default_dir')"
-  gem19 install --ignore-dependencies -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
+  local _gemdir="$(ruby -e'puts Gem.default_dir')"
+  gem install --ignore-dependencies -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
 }
