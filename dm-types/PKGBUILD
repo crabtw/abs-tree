@@ -1,17 +1,17 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=innate
+_gemname=dm-types
 pkgname=ruby-$_gemname
-pkgver=2009.07
+pkgver=0.10.0
 pkgrel=1
-pkgdesc="Innate is the core web-framework part of Ramaze and can be used standalonei"
+pkgdesc="DataMapper plugin providing extra data types"
 arch=('i686' 'x86_64')
-url="http://ramaze.net"
-license=('Ruby')
-depends=('ruby' 'rack')
+url="http://datamapper.org/"
+license=('MIT')
+depends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('9b642243c08317ed3e814962832ae4fa')
+md5sums=('0a820ba9d66a8196329cbeb426040290')
 
 build() {
   cd $srcdir

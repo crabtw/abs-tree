@@ -9,7 +9,6 @@ arch=('i686' 'x86_64')
 url="http://ramaze.net/"
 license=('Ruby')
 depends=('ruby' 'ruby-innate')
-makedepends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
 md5sums=('2630f834b0dd4b83d9c765a58bb75f7c')

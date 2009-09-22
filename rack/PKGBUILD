@@ -9,7 +9,6 @@ arch=('i686' 'x86_64')
 url="http://rack.rubyforge.org/"
 license=('MIT')
 depends=('ruby')
-makedepends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
 md5sums=('014e29fa0aad84dd0fb4fc9707be7b8a')

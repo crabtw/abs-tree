@@ -1,17 +1,17 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=innate
+_gemname=addressable
 pkgname=ruby-$_gemname
-pkgver=2009.07
+pkgver=2.1.0
 pkgrel=1
-pkgdesc="Innate is the core web-framework part of Ramaze and can be used standalonei"
+pkgdesc="Addressable is a replacement for the URI implementation that is part of Ruby's standard library"
 arch=('i686' 'x86_64')
-url="http://ramaze.net"
-license=('Ruby')
-depends=('ruby' 'rack')
+url="http://addressable.rubyforge.org/"
+license=('MIT')
+depends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('9b642243c08317ed3e814962832ae4fa')
+md5sums=('2dd05c5f444a4089d998f04ca14bc85e')
 
 build() {
   cd $srcdir
