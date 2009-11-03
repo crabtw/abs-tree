@@ -1,18 +1,18 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=rmagick
+_gemname=fastthread
 pkgname=ruby-$_gemname
-pkgver=2.12.2
+pkgver=1.0.7
 pkgrel=1
-pkgdesc="RMagick is an interface between the Ruby programming language and the ImageMagick and GraphicsMagick image processing libraries"
+pkgdesc="Optimized replacement for thread.rb primitives"
 arch=('i686' 'x86_64')
-url="http://rmagick.rubyforge.org"
-license=('GPL')
-depends=('ruby' 'imagemagick')
-makedepends=('ruby' 'imagemagick')
+url="http://mongrel.rubyforge.org/"
+license=('Ruby')
+depends=('ruby')
+makedepends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('c459ad6d1ac60246851ee65686a46fa7')
+md5sums=('16eb06dc3661c89301de6c73c71bb16e')
 
 build() {
   cd $srcdir

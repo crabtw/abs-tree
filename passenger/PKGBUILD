@@ -1,18 +1,18 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=rmagick
-pkgname=ruby-$_gemname
-pkgver=2.12.2
+_gemname=passenger
+pkgname=$_gemname
+pkgver=2.2.5
 pkgrel=1
-pkgdesc="RMagick is an interface between the Ruby programming language and the ImageMagick and GraphicsMagick image processing libraries"
+pkgdesc="Apache module for Ruby on Rails support"
 arch=('i686' 'x86_64')
-url="http://rmagick.rubyforge.org"
+url="http://www.modrails.com/"
 license=('GPL')
-depends=('ruby' 'imagemagick')
-makedepends=('ruby' 'imagemagick')
+depends=('ruby' 'ruby-fastthread')
+makedepends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('c459ad6d1ac60246851ee65686a46fa7')
+md5sums=('912b76dabc68fd3a3393765255cb0a64')
 
 build() {
   cd $srcdir

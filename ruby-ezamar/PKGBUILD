@@ -1,18 +1,17 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=rmagick
+_gemname=ezamar
 pkgname=ruby-$_gemname
-pkgver=2.12.2
+pkgver=2009.06
 pkgrel=1
-pkgdesc="RMagick is an interface between the Ruby programming language and the ImageMagick and GraphicsMagick image processing libraries"
+pkgdesc="Ezamar is a light-weight and simple templating engine for Ruby"
 arch=('i686' 'x86_64')
-url="http://rmagick.rubyforge.org"
-license=('GPL')
-depends=('ruby' 'imagemagick')
-makedepends=('ruby' 'imagemagick')
+url="http://github.com/manveru/ezamar"
+license=('Ruby')
+depends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('c459ad6d1ac60246851ee65686a46fa7')
+md5sums=('edfb78c6467ecf0e059aa9116364bd48')
 
 build() {
   cd $srcdir
