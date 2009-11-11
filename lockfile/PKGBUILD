@@ -1,17 +1,18 @@
 # Contributor: crab <crabtw@gmail.com>
 
-_gemname=addressable
-pkgname=ruby-$_gemname
-pkgver=2.1.1
+_gemname=lockfile
+pkgname=$_gemname
+pkgver=1.4.3
 pkgrel=1
-pkgdesc="Addressable is a replacement for the URI implementation that is part of Ruby's standard library"
+pkgdesc="lockfile"
 arch=('i686' 'x86_64')
-url="http://addressable.rubyforge.org/"
-license=('MIT')
+url="http://codeforpeople.com/lib/ruby/lockfile/"
+license=('Ruby')
 depends=('ruby')
+makedepends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('e652cd9c06a822962ef57077ac7abde9')
+md5sums=('53a63206bbaefb7106db5a74a5adf148')
 
 build() {
   cd $srcdir
