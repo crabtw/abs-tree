@@ -11,7 +11,7 @@ license=('MIT')
 depends=('ruby')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('014e29fa0aad84dd0fb4fc9707be7b8a')
+md5sums=('22268803c9b8b785ed30fcee5bce3ce7')
 
 build() {
   cd $srcdir
