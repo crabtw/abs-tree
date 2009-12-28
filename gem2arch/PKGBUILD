@@ -1,0 +1,16 @@
+# Contributor: crab <crabtw@gmail.com>
+
+pkgname=gem2arch
+pkgver=0.1
+pkgrel=1
+pkgdesc="Create Arch Linux packages from Ruby Gem Packages "
+arch=('i686' 'x86_64')
+url="http://github.com/crabtw/"
+license=('Ruby')
+depends=('ruby')
+source=('gem2arch.rb')
+md5sums=('877d4f8bef3950705d62d220e58fbf59')
+
+build() {
+  install -D -m755 $srcdir/gem2arch.rb $pkgdir/usr/bin/gem2arch
+}
