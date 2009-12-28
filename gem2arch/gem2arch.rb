@@ -17,8 +17,8 @@ pkgdesc="<%= description %>"
 arch=('i686' 'x86_64')
 url="<%= website %>"
 license=('')
-depends=('ruby' <%= depends %>)
-makedepends=('ruby')
+depends=('ruby'<%= depends %>)
+makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
 md5sums=('<%= md5sum %>')
@@ -47,10 +47,10 @@ def download(gem_name, gem_ver = nil)
     exit 1
   end
 
+  puts "Downloaded #{spec.full_name}"
+
   path = Gem::RemoteFetcher.fetcher.download spec, source_uri
   FileUtils.mv path, "#{spec.full_name}.gem"
-
-  puts "Downloaded #{spec.full_name}"
 
   return spec
 end
@@ -77,14 +77,14 @@ def gen_pkgbuild(spec)
   email = "#{username}@#{hostname}"
 
   website = spec.homepage
-  description = spec.description
+  description = spec.summary
 
   md5sum = calc_digest(spec.full_name + '.gem')
 
   depends = spec.runtime_dependencies
   depends = if depends.empty? then ""
   else
-    depends.map do |d|
+    ' ' + depends.map do |d|
       d.version_requirements.requirements.map do |comp, ver|
         comp = '>=' if comp == '~>'
         "'ruby-#{d.name}#{comp}#{ver}'"

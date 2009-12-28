@@ -7,9 +7,9 @@ pkgdesc="Create Arch Linux packages from Ruby Gem Packages "
 arch=('i686' 'x86_64')
 url="http://github.com/crabtw/"
 license=('Ruby')
-depends=('ruby')
+depends=('ruby' 'rubygems')
 source=('gem2arch.rb')
-md5sums=('877d4f8bef3950705d62d220e58fbf59')
+md5sums=('9bbeeb258715a84b1e1a99d6c4fd4d89')
 
 build() {
   install -D -m755 $srcdir/gem2arch.rb $pkgdir/usr/bin/gem2arch
