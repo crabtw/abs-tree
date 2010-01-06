@@ -109,7 +109,7 @@ if $0 == __FILE__
     spec = download *ARGV.take(2)
 
     target_dir = "#{base_dir}/ruby-#{spec.name}"
-    Dir.mkdir target_dir
+    Dir.mkdir target_dir unless File.exist? target_dir
 
     {
       'PKGBUILD' => lambda {|s| gen_pkgbuild s }
