@@ -9,7 +9,7 @@ url="http://github.com/crabtw/"
 license=('Ruby')
 depends=('ruby' 'rubygems')
 source=('gem2arch.rb')
-md5sums=('32d1baf07ec5a6f77be04c6eeded0af1')
+md5sums=('fa315146efbcf06e35105f17e10e7534')
 
 build() {
   install -D -m755 $srcdir/gem2arch.rb $pkgdir/usr/bin/gem2arch
