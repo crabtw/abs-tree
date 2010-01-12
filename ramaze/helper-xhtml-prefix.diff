@@ -1,15 +1,15 @@
---- lib/ramaze/helper/xhtml.rb.orig	2009-11-04 20:13:31.180694249 +0800
-+++ lib/ramaze/helper/xhtml.rb	2009-11-04 20:18:00.000000000 +0800
-@@ -8,7 +8,7 @@
- 
-       def css(name, media = 'screen', options = {})
-         if options.empty?
--          LINK_TAG % ["/css/#{name}.css", media]
-+          LINK_TAG % ["#{Ramaze.options.prefix}/css/#{name}.css", media]
+--- lib/ramaze/helper/xhtml.rb.orig	2010-01-12 21:59:42.339415304 +0800
++++ lib/ramaze/helper/xhtml.rb	2010-01-12 22:00:10.202745440 +0800
+@@ -11,7 +11,7 @@
+           if name =~ /^http/ # consider it external full url
+             LINK_TAG % [name, media]
+           else
+-            LINK_TAG % ["/css/#{name}.css", media]
++            LINK_TAG % ["#{Ramaze.options.prefix}/css/#{name}.css", media]
+           end
          elsif options[:only].to_s.downcase == 'ie'
            "<!--[if IE]>#{css(name, media)}<![endif]-->"
-         end
-@@ -22,7 +22,7 @@
+@@ -26,7 +26,7 @@
          if name =~ /^http/ # consider it external full url
            SCRIPT_TAG % name
          else

@@ -3,17 +3,17 @@
 
 _gemname=passenger
 pkgname=$_gemname
-pkgver=2.2.8
+pkgver=2.2.9
 pkgrel=1
-pkgdesc="Passenger is an Apache module for Ruby on Rails support."
+pkgdesc="Apache module for Ruby on Rails support."
 arch=('i686' 'x86_64')
 url="http://www.modrails.com/"
-license=('GPL')
+license=('GPL2')
 depends=('ruby' 'rake' 'ruby-fastthread>=1.0.1' 'rack>=0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('68034acced5751d61d338eaacb3cbc3d')
+md5sums=('1cc517c73266d647b325977cedba62ea')
 
 build() {
   cd $srcdir

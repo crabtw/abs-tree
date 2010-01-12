@@ -1,5 +1,5 @@
---- lib/innate/helper/redirect.rb.orig	2009-11-04 20:42:37.753852619 +0800
-+++ lib/innate/helper/redirect.rb	2009-11-04 20:18:19.000000000 +0800
+--- lib/innate/helper/redirect.rb.orig	2010-01-12 21:52:38.499875618 +0800
++++ lib/innate/helper/redirect.rb	2010-01-12 21:53:36.619450298 +0800
 @@ -77,7 +77,7 @@
            redirect(referer) unless referer_uri == request_uri
          end

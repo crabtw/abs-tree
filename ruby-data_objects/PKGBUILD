@@ -3,17 +3,17 @@
 
 _gemname=data_objects
 pkgname=ruby-$_gemname
-pkgver=0.10.0
+pkgver=0.10.1
 pkgrel=1
 pkgdesc="DataObjects basic API and shared driver specifications"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/do"
 license=('MIT')
-depends=('ruby' 'ruby-addressable>=2.0' 'ruby-extlib>=0.9.12')
+depends=('ruby' 'ruby-addressable>=2.1')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('ae1c40781611ba0c391d29018f6f4d10')
+md5sums=('18376323f24ee21fb7ba3f2bc95cdb39')
 
 build() {
   cd $srcdir

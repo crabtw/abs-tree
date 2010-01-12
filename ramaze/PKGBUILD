@@ -3,19 +3,19 @@
 
 _gemname=ramaze
 pkgname=$_gemname
-pkgver=2009.10
+pkgver=2010.01
 pkgrel=1
 pkgdesc="Ramaze is a simple and modular web framework"
 arch=('i686' 'x86_64')
 url="http://ramaze.net"
 license=('Ruby')
-depends=('ruby' 'ruby-innate=2009.10')
+depends=('ruby' 'ruby-innate=2010.01')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem
         helper-xhtml-prefix.diff)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('e97055aa3b8ce4e744dc71fba36368d4'
-         '9dbe65569cf0ced5ac7d6628e214adaf')
+md5sums=('2a39115ee45c7335cf72d3818968a6d4'
+         '44b24b0eb30ab26d290a2a324f01ae95')
 
 build() {
   cd $srcdir
