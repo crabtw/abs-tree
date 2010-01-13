@@ -76,9 +76,11 @@ def gen_pkgbuild(spec)
   contact = ENV['ARCH_RUBY'] || ''
 
   if contact.empty?
+    puts
     puts "Warning: ARCH_RUBY environment variable not set."
     puts "Set this to the maintainer contact you wish to use."
     puts "E.g. 'Arch Ruby Team <arch-ruby@archlinux.org>'"
+    puts
   end
 
   website = spec.homepage
