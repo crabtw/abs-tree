@@ -33,7 +33,7 @@ build() {
 
   cd ${srcdir}/screen-${pkgver}
 
-  patch < ../../uao-patch/cjkwidth-mhsin.diff || return 1
+  #patch < ../../uao-patch/cjkwidth-mhsin.diff || return 1
   patch < ../../uao-patch/uao.diff || return 1
   perl  ../../uao-patch/table/conv.pl < ../../uao-patch/table/uao_big5uni.map > utf8encodings/18 || return 1
 
