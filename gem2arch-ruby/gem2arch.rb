@@ -92,7 +92,7 @@ def gen_pkgbuild(spec)
   depends = if depends.empty? then ""
   else
     ' ' + depends.map do |d|
-      d.version_requirements.requirements.map do |comp, ver|
+      d.requirement.requirements.map do |comp, ver|
         comp = '>=' if comp == '~>'
         "'ruby-#{d.name}#{comp}#{ver}'"
       end
