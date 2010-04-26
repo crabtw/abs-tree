@@ -3,7 +3,7 @@
 
 _gemname=rmagick
 pkgname=ruby-$_gemname
-pkgver=2.12.2
+pkgver=2.13.1
 pkgrel=1
 pkgdesc="Ruby binding to ImageMagick"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'imagemagick')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('c459ad6d1ac60246851ee65686a46fa7')
+md5sums=('f528a83789c5abbe540b6227c08b2f5a')
 
 build() {
   cd $srcdir

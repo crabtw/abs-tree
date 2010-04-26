@@ -3,25 +3,20 @@
 
 _gemname=ramaze
 pkgname=$_gemname
-pkgver=2010.01
+pkgver=2010.04.04
 pkgrel=1
 pkgdesc="Ramaze is a simple and modular web framework"
 arch=('i686' 'x86_64')
 url="http://ramaze.net"
 license=('Ruby')
-depends=('ruby' 'ruby-innate=2010.01')
+depends=('ruby' 'ruby-innate=2010.04')
 makedepends=('rubygems')
-source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem
-        helper-xhtml-prefix.diff)
+source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('2a39115ee45c7335cf72d3818968a6d4'
-         '44b24b0eb30ab26d290a2a324f01ae95')
+md5sums=('71736f531dce220597b4be517bf6bb28')
 
 build() {
   cd $srcdir
   local _gemdir="$(ruby -e'puts Gem.default_dir')"
   gem install --ignore-dependencies -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
-
-  cd $pkgdir$_gemdir/gems/$_gemname-$pkgver || return 1
-  patch -p0 < $startdir/helper-xhtml-prefix.diff || return 1
 }
