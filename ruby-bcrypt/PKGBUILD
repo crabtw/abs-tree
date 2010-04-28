@@ -2,7 +2,7 @@
 # Contributor: crab <crabtw@gmail.com>
 
 _gemname=bcrypt-ruby
-pkgname=ruby-$_gemname
+pkgname=ruby-bcrypt
 pkgver=2.1.2
 pkgrel=1
 pkgdesc="OpenBSD's bcrypt() password hashing algorithm."

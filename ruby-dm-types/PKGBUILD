@@ -9,7 +9,7 @@ pkgdesc="DataMapper plugin providing extra data types"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-more/tree/master/dm-types"
 license=('MIT')
-depends=('ruby' 'ruby-bcrypt-ruby>=2.1.2' 'ruby-dm-core>=0.10.2' 'ruby-fastercsv>=1.5.0' 'ruby-json_pure>=1.2.0' 'ruby-uuidtools>=2.1.1' 'ruby-stringex>=1.1.0')
+depends=('ruby' 'ruby-bcrypt>=2.1.2' 'ruby-dm-core>=0.10.2' 'ruby-fastercsv>=1.5.0' 'ruby-json_pure>=1.2.0' 'ruby-uuidtools>=2.1.1' 'ruby-stringex>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
