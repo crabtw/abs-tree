@@ -2,7 +2,7 @@
 # Contributor: crab <crabtw@gmail.com>
 
 _gemname=god
-pkgname=ruby-$_gemname
+pkgname=$_gemname
 pkgver=0.9.0
 pkgrel=1
 pkgdesc="Like monit, only awesome"
