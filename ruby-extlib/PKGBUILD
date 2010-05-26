@@ -3,7 +3,7 @@
 
 _gemname=extlib
 pkgname=ruby-$_gemname
-pkgver=0.9.14
+pkgver=0.9.15
 pkgrel=1
 pkgdesc="Support library for DataMapper and Merb"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('16b39e6a93f267aa42af8faed056e05c')
+md5sums=('e9b1dec213911f2e681b6554a4317f5e')
 
 build() {
   cd $srcdir

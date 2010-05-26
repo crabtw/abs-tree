@@ -3,17 +3,17 @@
 
 _gemname=do_mysql
 pkgname=ruby-$_gemname
-pkgver=0.10.1
+pkgver=0.10.2
 pkgrel=1
 pkgdesc="DataObjects MySQL Driver"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/do"
 license=('MIT')
-depends=('ruby' 'ruby-data_objects=0.10.1' 'libmysqlclient')
+depends=('ruby' 'ruby-data_objects=0.10.2' 'libmysqlclient')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('6a2d1d1dbe78861ae4da1cb4419b13e2')
+md5sums=('f5cf8dd7e09019a5cff217f972496c9b')
 
 build() {
   cd $srcdir
