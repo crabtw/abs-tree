@@ -3,17 +3,17 @@
 
 _gemname=dm-types
 pkgname=ruby-$_gemname
-pkgver=0.10.2
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="DataMapper plugin providing extra data types"
 arch=('i686' 'x86_64')
-url="http://github.com/datamapper/dm-more/tree/master/dm-types"
+url="http://github.com/datamapper/dm-types"
 license=('MIT')
-depends=('ruby' 'ruby-bcrypt>=2.1.2' 'ruby-dm-core>=0.10.2' 'ruby-fastercsv>=1.5.0' 'ruby-json_pure>=1.2.0' 'ruby-uuidtools>=2.1.1' 'ruby-stringex>=1.1.0')
+depends=('ruby' 'ruby-dm-core>=1.0.0' 'ruby-fastercsv>=1.5.3' 'ruby-json_pure>=1.4.3' 'ruby-uuidtools>=2.1.1' 'ruby-stringex>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('40ae90069b1cfad7c1e93ce5d4ae718c')
+md5sums=('f218d38b76ea1ee6d6974caf293f8fed')
 
 build() {
   cd $srcdir

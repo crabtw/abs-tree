@@ -3,17 +3,17 @@
 
 _gemname=unicorn
 pkgname=$_gemname
-pkgver=0.99.0
+pkgver=0.991.0
 pkgrel=1
 pkgdesc="Rack HTTP server for fast clients and Unix"
 arch=('i686' 'x86_64')
 url="http://unicorn.bogomips.org/"
-license=('GPL')
+license=('GPL2')
 depends=('ruby' 'rack>=0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('3f8a064f6d7d881a28f4eeccef96b173')
+md5sums=('6a1a9c84d867ff9eb3495d70615db02e')
 
 build() {
   cd $srcdir

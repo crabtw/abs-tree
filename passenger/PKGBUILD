@@ -3,7 +3,7 @@
 
 _gemname=passenger
 pkgname=$_gemname
-pkgver=2.2.11
+pkgver=2.2.14
 pkgrel=1
 pkgdesc="Apache module for Ruby on Rails support."
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'rake' 'ruby-fastthread>=1.0.1' 'rack>=0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('505ab2d6f42fcc576dfe1d03b89f844c')
+md5sums=('066d023d7548695b116e17cd35e5a516')
 
 build() {
   cd $srcdir
