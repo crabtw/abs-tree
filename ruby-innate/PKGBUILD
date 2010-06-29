@@ -3,17 +3,17 @@
 
 _gemname=innate
 pkgname=ruby-$_gemname
-pkgver=2010.04
+pkgver=2010.06.18
 pkgrel=1
 pkgdesc="Powerful web-framework wrapper for Rack."
 arch=('i686' 'x86_64')
 url="http://github.com/manveru/innate"
 license=('Ruby')
-depends=('ruby' 'rack=1.1.0')
+depends=('ruby' 'rack>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('40b122bde071094a749ee9cf42089b78')
+md5sums=('0527604ce0288697fd1e3ef1c64b3865')
 
 build() {
   cd $srcdir

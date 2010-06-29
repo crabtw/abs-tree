@@ -3,7 +3,7 @@
 
 _gemname=unicorn
 pkgname=$_gemname
-pkgver=0.991.0
+pkgver=1.0.0
 pkgrel=1
 pkgdesc="Rack HTTP server for fast clients and Unix"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'rack>=0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('6a1a9c84d867ff9eb3495d70615db02e')
+md5sums=('fddcb13591c7034186f80f571309cfa2')
 
 build() {
   cd $srcdir
