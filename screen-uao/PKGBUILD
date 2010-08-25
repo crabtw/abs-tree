@@ -17,10 +17,10 @@ options=('!makeflags')
 install=screen.install
 source=(ftp://ftp.uni-erlangen.de/pub/utilities/screen/screen-${pkgver}.tar.gz \
         screen.pam \
-        uao-patch/cjkwidth-mhsin.diff \
-        uao-patch/uao.diff \
-        uao-patch/table/conv.pl \
-        uao-patch/table/uao_big5uni.map)
+        cjkwidth-mhsin.diff \
+        uao.diff \
+        conv.pl \
+        uao_big5uni.map)
 md5sums=('8506fd205028a96c741e4037de6e3c42' \
          '74f7919d7b65436cc2ea5341fa8ca374' \
          'd1b56ca6bf291f9ba2cb573b002a693a' \
@@ -34,8 +34,8 @@ build() {
   cd ${srcdir}/screen-${pkgver}
 
   #patch < ../../uao-patch/cjkwidth-mhsin.diff || return 1
-  patch < ../../uao-patch/uao.diff || return 1
-  perl  ../../uao-patch/table/conv.pl < ../../uao-patch/table/uao_big5uni.map > utf8encodings/18 || return 1
+  patch < ../../uao.diff || return 1
+  perl  ../../conv.pl < ../../uao_big5uni.map > utf8encodings/18 || return 1
 
   ./configure --prefix=/usr --enable-pam \
         --with-sys-screenrc=/etc/screenrc --enable-colors256 \
