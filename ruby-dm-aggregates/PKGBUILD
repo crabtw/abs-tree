@@ -3,17 +3,17 @@
 
 _gemname=dm-aggregates
 pkgname=ruby-$_gemname
-pkgver=1.0.0
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="DataMapper plugin providing support for aggregates on collections"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-aggregates"
 license=('MIT')
-depends=('ruby' 'ruby-dm-core>=1.0.0')
+depends=('ruby' 'ruby-dm-core>=1.0.2')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('e7a8e1889190d19338be2199df60ed28')
+md5sums=('5e181b83060e84ee377a67675e3b9e50')
 
 build() {
   cd $srcdir

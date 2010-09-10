@@ -3,17 +3,17 @@
 
 _gemname=dm-constraints
 pkgname=ruby-$_gemname
-pkgver=1.0.0
+pkgver=1.0.2
 pkgrel=1
 pkgdesc="DataMapper plugin constraining relationships"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-constraints"
 license=('MIT')
-depends=('ruby' 'ruby-dm-core>=1.0.0' 'ruby-dm-migrations>=1.0.0')
+depends=('ruby' 'ruby-dm-core>=1.0.2' 'ruby-dm-migrations>=1.0.2')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('4b3e46bef91633434c0d80e1f0e63c81')
+md5sums=('bc27fb639935a6b1764852853dfc703c')
 
 build() {
   cd $srcdir
