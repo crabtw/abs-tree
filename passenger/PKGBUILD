@@ -4,7 +4,7 @@
 _gemname=passenger
 pkgname=$_gemname
 pkgver=2.2.15
-pkgrel=1
+pkgrel=3
 pkgdesc="Apache module for Ruby on Rails support."
 arch=('i686' 'x86_64')
 url="http://www.modrails.com/"
