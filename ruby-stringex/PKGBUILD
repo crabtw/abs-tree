@@ -3,7 +3,7 @@
 
 _gemname=stringex
 pkgname=ruby-$_gemname
-pkgver=1.1.0
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="Some [hopefully] useful extensions to Ruby&#8217;s String class"
 arch=('i686' 'x86_64')
@@ -13,10 +13,10 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('8356386d63bbfaaccf8382df05079e5e')
+md5sums=('872142707d197c09aa4c83182b2e0a50')
 
 build() {
   cd $srcdir
   local _gemdir="$(ruby -e'puts Gem.default_dir')"
-  gem install --ignore-dependencies --no-rdoc -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
+  gem install --ignore-dependencies -i "$pkgdir$_gemdir" $_gemname-$pkgver.gem
 }
