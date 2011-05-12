@@ -3,17 +3,17 @@
 
 _gemname=passenger
 pkgname=$_gemname
-pkgver=3.0.1
+pkgver=3.0.7
 pkgrel=1
 pkgdesc="Easy and robust Ruby web application deployment"
 arch=('i686' 'x86_64')
 url="http://www.modrails.com/"
 license=('MIT')
-depends=('ruby' 'rake' 'ruby-fastthread>=1.0.1' 'ruby-daemon_controller>=0.2.5' 'ruby-file-tail>=0' 'rack>=0')
+depends=('ruby' 'rake' 'ruby-fastthread>=1.0.1' 'ruby-daemon_controller>=0.2.5' 'rack>=0')
 makedepends=('rubygems')
-source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
+source=(http://rubygems.org/downloads/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('f64f821f5988e7aaea96a57579e7c8ee')
+md5sums=('3fb34e737c5fd3902024ddd84a6de2d8')
 
 build() {
   cd $srcdir
