@@ -3,17 +3,17 @@
 
 _gemname=dm-mysql-adapter
 pkgname=ruby-$_gemname
-pkgver=1.0.2
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="MySQL Adapter for DataMapper"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-mysql-adapter"
 license=('MIT')
-depends=('ruby' 'ruby-do_mysql>=0.10.2' 'ruby-dm-do-adapter>=1.0.2')
+depends=('ruby' 'ruby-do_mysql>=0.10.2' 'ruby-dm-do-adapter>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('a62ce427fcc810dfd292662ccfde8021')
+md5sums=('28f4a4cbde4082d43742c3058ef3ab28')
 
 build() {
   cd $srcdir

@@ -3,7 +3,7 @@
 
 _gemname=addressable
 pkgname=ruby-$_gemname
-pkgver=2.2.2
+pkgver=2.2.6
 pkgrel=1
 pkgdesc="URI Implementation"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('b85479c222cd6c82284a5d0bca13c840')
+md5sums=('3eec7c544b664f28023ff5d7fb0116ef')
 
 build() {
   cd $srcdir

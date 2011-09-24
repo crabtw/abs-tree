@@ -3,17 +3,17 @@
 
 _gemname=dm-migrations
 pkgname=ruby-$_gemname
-pkgver=1.0.2
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="DataMapper plugin for writing and speccing migrations"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-migrations"
 license=('MIT')
-depends=('ruby' 'ruby-dm-core>=1.0.2')
+depends=('ruby' 'ruby-dm-core>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('b087e852ba186a0690bec220928bfd70')
+md5sums=('4f7f0a7505ae186dc5cdbf5f58012ae2')
 
 build() {
   cd $srcdir

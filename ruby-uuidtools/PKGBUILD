@@ -3,7 +3,7 @@
 
 _gemname=uuidtools
 pkgname=ruby-$_gemname
-pkgver=2.1.1
+pkgver=2.1.2
 pkgrel=1
 pkgdesc="UUID generator"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('bb543d349308b4b7f830c564b8146768')
+md5sums=('bb1d901c18ffb584c60e567cca8dceee')
 
 build() {
   cd $srcdir

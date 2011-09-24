@@ -3,7 +3,7 @@
 
 _gemname=stringex
 pkgname=ruby-$_gemname
-pkgver=1.2.0
+pkgver=1.3.0
 pkgrel=1
 pkgdesc="Some [hopefully] useful extensions to Ruby&#8217;s String class"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('872142707d197c09aa4c83182b2e0a50')
+md5sums=('52c9ec953d583f280321499d07b21cd8')
 
 build() {
   cd $srcdir

@@ -3,7 +3,7 @@
 
 _gemname=fastercsv
 pkgname=ruby-$_gemname
-pkgver=1.5.3
+pkgver=1.5.4
 pkgrel=1
 pkgdesc="FasterCSV is CSV, but faster, smaller, and cleaner."
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('ff702e1a645db8ac055bd1af8ce9143c')
+md5sums=('451ccd8f39cf5fb4e9ee27d4b7c43561')
 
 build() {
   cd $srcdir

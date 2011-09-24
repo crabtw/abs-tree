@@ -3,7 +3,7 @@
 
 _gemname=innate
 pkgname=ruby-$_gemname
-pkgver=2010.07
+pkgver=2011.04
 pkgrel=1
 pkgdesc="Powerful web-framework wrapper for Rack."
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'rack>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('ebbe0cef40759f6834d45f9cd3e582c4')
+md5sums=('2cadad2b909b34db83b34c74ed4e7fe5')
 
 build() {
   cd $srcdir

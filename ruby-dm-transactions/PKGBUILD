@@ -3,17 +3,17 @@
 
 _gemname=dm-transactions
 pkgname=ruby-$_gemname
-pkgver=1.0.2
+pkgver=1.1.0
 pkgrel=1
 pkgdesc="Adds transaction support to datamapper"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-transactions"
 license=('MIT')
-depends=('ruby' 'ruby-dm-core>=1.0.2')
+depends=('ruby' 'ruby-dm-core>=1.1.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('d230d1f2c761b772e7a4568ea3825303')
+md5sums=('bc747c95bb74090f71bcdb07de97dcae')
 
 build() {
   cd $srcdir

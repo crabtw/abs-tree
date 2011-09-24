@@ -3,7 +3,7 @@
 
 _gemname=passenger
 pkgname=$_gemname
-pkgver=3.0.7
+pkgver=3.0.9
 pkgrel=1
 pkgdesc="Easy and robust Ruby web application deployment"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'rake' 'ruby-fastthread>=1.0.1' 'ruby-daemon_controller>=0.2.5' 
 makedepends=('rubygems')
 source=(http://rubygems.org/downloads/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('3fb34e737c5fd3902024ddd84a6de2d8')
+md5sums=('d616c8425071303b983b6c09fea8004a')
 
 build() {
   cd $srcdir
