@@ -3,17 +3,17 @@
 
 _gemname=dm-do-adapter
 pkgname=ruby-$_gemname
-pkgver=1.1.0
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="DataObjects Adapter for DataMapper"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-do-adapter"
 license=('MIT')
-depends=('ruby' 'ruby-data_objects>=0.10.2' 'ruby-dm-core>=1.1.0')
+depends=('ruby' 'ruby-data_objects>=0.10.6' 'ruby-dm-core>=1.2.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('7ae7b106d739796e821471ea09b50c3c')
+md5sums=('67efc2f3847ee27b89103b6103d78824')
 
 build() {
   cd $srcdir

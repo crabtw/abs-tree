@@ -3,7 +3,7 @@
 
 _gemname=data_objects
 pkgname=ruby-$_gemname
-pkgver=0.10.6
+pkgver=0.10.7
 pkgrel=1
 pkgdesc="DataObjects basic API and shared driver specifications"
 arch=('i686' 'x86_64')
@@ -13,7 +13,7 @@ depends=('ruby' 'ruby-addressable>=2.1')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('2f47e1bb33f2d72b8f44b36bfb07e03f')
+md5sums=('21953d95441937ef11cd502924ce106e')
 
 build() {
   cd $srcdir

@@ -3,17 +3,17 @@
 
 _gemname=dm-core
 pkgname=ruby-$_gemname
-pkgver=1.1.0
+pkgver=1.2.0
 pkgrel=1
 pkgdesc="An Object/Relational Mapper for Ruby"
 arch=('i686' 'x86_64')
 url="http://github.com/datamapper/dm-core"
 license=('MIT')
-depends=('ruby' 'ruby-addressable>=2.2.4')
+depends=('ruby' 'ruby-addressable>=2.2.6')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
-md5sums=('71938ae341a2955967e8799094efffb7')
+md5sums=('415c23a0d7ee9b1700517846db3754bb')
 
 build() {
   cd $srcdir
