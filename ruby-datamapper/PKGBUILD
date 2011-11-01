@@ -9,7 +9,7 @@ pkgdesc="An Object/Relational Mapper for Ruby"
 arch=('i686' 'x86_64')
 url="http://datamapper.org"
 license=('MIT')
-depends=('ruby' 'ruby-dm-core=1.2.0' 'ruby-dm-aggregates=1.2.0' 'ruby-dm-constraints=1.2.0' 'ruby-dm-migrations=1.2.0' 'ruby-dm-transactions=1.2.0' 'ruby-dm-serializer=1.2.0' 'ruby-dm-timestamps=1.2.0' 'ruby-dm-validations=1.2.0' 'ruby-dm-types=1.2.0')
+depends=('ruby' 'ruby-dm-core>=1.2.0' 'ruby-dm-aggregates>=1.2.0' 'ruby-dm-constraints>=1.2.0' 'ruby-dm-migrations>=1.2.0' 'ruby-dm-transactions>=1.2.0' 'ruby-dm-serializer>=1.2.0' 'ruby-dm-timestamps>=1.2.0' 'ruby-dm-validations>=1.2.0' 'ruby-dm-types>=1.2.0')
 makedepends=('rubygems')
 source=(http://gems.rubyforge.org/gems/$_gemname-$pkgver.gem)
 noextract=($_gemname-$pkgver.gem)
